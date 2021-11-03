@@ -24,7 +24,7 @@ public class Main {
 		}
 
 		int test = 150 / z;
-		
+
 	}
 
 }
