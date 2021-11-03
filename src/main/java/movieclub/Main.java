@@ -24,9 +24,11 @@ public class Main {
 		if(System.currentTimeMillis()< 50){
 			z = 5;
 		}
-
+		else{
+			z = 1;
+		}
 		int test = 150 / z;
-
+		System.out.println("test = "+test);
 	}
 
 
