@@ -1,5 +1,7 @@
 package movieclub;
 
+import java.util.Date;
+
 public class Main {
 	public static void main(String[] args) {
 
@@ -25,6 +27,21 @@ public class Main {
 
 		int test = 150 / z;
 
+	}
+
+
+	public Date getDateIfSomething(){
+		if(System.currentTimeMillis() > 560){
+			return new Date();
+		}
+		return null;
+	}
+
+	public void doSomethingRisky(){
+		Date someDate = getDateIfSomething();
+		boolean after = someDate.after(new Date());
+
+		System.out.println("Date in text "+ after);
 	}
 
 }
